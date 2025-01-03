@@ -1,0 +1,13 @@
+Here's how to fix the issue using flexbox:
+```css
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div {
+  width: 50%;
+  box-sizing: border-box; /* Prevents unexpected width changes due to padding and borders */
+}
+```
+This solution uses `flex-wrap: wrap` to allow elements to wrap onto the next line if necessary. `box-sizing: border-box;` is crucial for consistent width management across different browsers.

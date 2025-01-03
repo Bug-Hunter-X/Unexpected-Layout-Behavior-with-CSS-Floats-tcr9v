@@ -1,0 +1,8 @@
+The following CSS code results in unexpected behavior in some browsers: 
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+This can cause layout issues where the elements don't wrap correctly or have unexpected spacing if the total width of the floating elements exceeds the container width.
